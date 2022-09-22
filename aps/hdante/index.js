@@ -6,6 +6,7 @@ const obj = require('./obj')
 const History = require('../../lib/History')
 const MailingList = require('../../lib/MailingList')
 const Plc = require('../../lib/Plc')
+const PlcSH = require('./PlcSH')
 const Router = require('../../lib/Router')
 const handleLog = require('../../lib/log')
 
@@ -25,8 +26,8 @@ const main = async () => {
     plc01.on('log', log => handleLog(app, def.APS, history, log, mailingList))
     plc01.on('pub', ({ channel, data }) => app.publish(channel, data))
     /* Plc SH */
-    // const plc02 = new PLC_SH(def.PLC_SH)
-    // plc02.run(def, obj)
+    const plc02 = new PlcSH(def.PLC_SH)
+    plc02.run(def, obj)
     /* uWS */
     const router = new Router(app, history, mailingList, plc01)
     router.run(def, obj)

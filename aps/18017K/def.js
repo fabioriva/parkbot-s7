@@ -1,9 +1,4 @@
 exports.APS = '18017K'
-// exports.PORT = 49026
-exports.HOST =
-  process.env.NODE_ENV !== 'production'
-    ? process.env.DEVELOPMENT_SERVER
-    : process.env.PRODUCTION_SERVER
 exports.HTTP = 9021
 exports.PLC = {
   // ip: '192.168.76.2',
@@ -45,8 +40,6 @@ exports.DATA_READ = {
   wordLen: 0x02
 }
 
-// const DB_MAP = 510
-// exports.DB_MAP = DB_MAP
 const STALLS = 120
 const STALL_LEN = 10
 exports.STALLS = STALLS

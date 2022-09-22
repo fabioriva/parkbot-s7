@@ -1,8 +1,4 @@
 exports.APS = 'hdante'
-exports.HOST =
-  process.env.NODE_ENV !== 'production'
-    ? process.env.DEVELOPMENT_SERVER
-    : process.env.PRODUCTION_SERVER
 exports.HTTP = 9022
 exports.PLC = {
   ip: '140.80.20.12',
