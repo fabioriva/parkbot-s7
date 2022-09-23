@@ -30,6 +30,6 @@ const main = async () => {
     console.error(new Error(err))
     process.exit(1)
   }
-} 
+}
 
 main()

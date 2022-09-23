@@ -63,9 +63,9 @@ exports.inputs1 = [
   { addr: 'E11.4', label: '' },
   { addr: 'E11.5', label: '' },
   { addr: 'E11.6', label: '' },
-  { addr: 'E11.7', label: '' },
-  ]
-  exports.inputs2 = [
+  { addr: 'E11.7', label: '' }
+]
+exports.inputs2 = [
   { addr: 'E12.0', label: '' },
   { addr: 'E12.1', label: '' },
   { addr: 'E12.2', label: '' },
@@ -73,9 +73,9 @@ exports.inputs1 = [
   { addr: 'E12.4', label: '' },
   { addr: 'E12.5', label: '' },
   { addr: 'E12.6', label: '' },
-  { addr: 'E12.7', label: '' },
-  ]
-  exports.inputs3 = [
+  { addr: 'E12.7', label: '' }
+]
+exports.inputs3 = [
   { addr: 'E24.0', label: '' },
   { addr: 'E24.1', label: '' },
   { addr: 'E24.2', label: '' },
@@ -91,9 +91,9 @@ exports.inputs1 = [
   { addr: 'E25.4', label: '' },
   { addr: 'E25.5', label: '' },
   { addr: 'E25.6', label: '' },
-  { addr: 'E25.7', label: '' },
-  ]
-  exports.inputs4 = [
+  { addr: 'E25.7', label: '' }
+]
+exports.inputs4 = [
   { addr: 'E0.0', label: '' },
   { addr: 'E0.1', label: '' },
   { addr: 'E0.2', label: '' },
@@ -133,9 +133,9 @@ exports.inputs1 = [
   { addr: 'E4.4', label: '' },
   { addr: 'E4.5', label: '' },
   { addr: 'E4.6', label: '' },
-  { addr: 'E4.7', label: '' },
-  ]
-  exports.outputs1 = [
+  { addr: 'E4.7', label: '' }
+]
+exports.outputs1 = [
   { addr: 'A4.0', label: '' },
   { addr: 'A4.1', label: '' },
   { addr: 'A4.2', label: '' },
@@ -167,9 +167,9 @@ exports.inputs1 = [
   { addr: 'A7.4', label: '' },
   { addr: 'A7.5', label: '' },
   { addr: 'A7.6', label: '' },
-  { addr: 'A7.7', label: '' },
-  ]
-  exports.outputs2 = [
+  { addr: 'A7.7', label: '' }
+]
+exports.outputs2 = [
   { addr: 'A12.0', label: '' },
   { addr: 'A12.1', label: '' },
   { addr: 'A12.2', label: '' },
@@ -177,9 +177,9 @@ exports.inputs1 = [
   { addr: 'A12.4', label: '' },
   { addr: 'A12.5', label: '' },
   { addr: 'A12.6', label: '' },
-  { addr: 'A12.7', label: '' },
-  ]
-  exports.outputs3 = [
+  { addr: 'A12.7', label: '' }
+]
+exports.outputs3 = [
   { addr: 'A24.0', label: '' },
   { addr: 'A24.1', label: '' },
   { addr: 'A24.2', label: '' },
@@ -195,9 +195,9 @@ exports.inputs1 = [
   { addr: 'A25.4', label: '' },
   { addr: 'A25.5', label: '' },
   { addr: 'A25.6', label: '' },
-  { addr: 'A25.7', label: '' },
-  ]
-  exports.outputs4 = [
+  { addr: 'A25.7', label: '' }
+]
+exports.outputs4 = [
   { addr: 'A0.0', label: '' },
   { addr: 'A0.1', label: '' },
   { addr: 'A0.2', label: '' },
@@ -221,9 +221,9 @@ exports.inputs1 = [
   { addr: 'A2.4', label: '' },
   { addr: 'A2.5', label: '' },
   { addr: 'A2.6', label: '' },
-  { addr: 'A2.7', label: '' },
-  ]
-  exports.ALARMS = [
+  { addr: 'A2.7', label: '' }
+]
+exports.ALARMS = [
   { id: 1, key: '', query: {} },
   { id: 2, key: '', query: {} },
   { id: 3, key: '', query: {} },
@@ -351,42 +351,42 @@ exports.inputs1 = [
   { id: 125, key: '', query: {} },
   { id: 126, key: '', query: {} },
   { id: 127, key: '', query: {} },
-  { id: 128, key: '', query: {} },
-  ]
-  
-  exports.DEVICES = [
-    { id: 0, key: 'operator' },
-    { id: 1, key: 'EL' },
-    { id: 2, key: 'EU' }
-  ]
-  
-  exports.MODES = [
-    { id: 0, key: 'mode-no' },
-    { id: 1, key: 'mode-data-edit' },
-    { id: 2, key: 'mode-data-read' },
-    { id: 3, key: 'mode-eme-1' },
-    { id: 4, key: 'mode-eme-2' },
-    { id: 5, key: 'mode-no' },
-    { id: 6, key: 'mode-step' },
-    { id: 7, key: 'mode-preset' },
-    { id: 8, key: 'mode-auto' }
-  ]
-  
-  exports.OPERATIONS = [
-    { id: 0, key: 'op-no' },
-    { id: 1, key: 'op-alarm-on' },
-    { id: 2, key: 'op-alarm-off' },
-    { id: 3, key: 'op-switch-mode' },
-    { id: 4, key: 'op-change-pin' },
-    { id: 5, key: 'op-stall-in' },
-    { id: 6, key: 'op-stall-out' },
-    { id: 7, key: 'op-shuffle-in' },
-    { id: 8, key: 'op-shuffle-out' },
-    { id: 9, key: 'op-stall-rsv' },
-    { id: 10, key: 'op-req-exit' },
-    { id: 11, key: 'op-req-entry' },
-    { id: 12, key: 'op-no' },
-    { id: 13, key: 'op-no' },
-    { id: 14, key: 'op-no' },
-    { id: 15, key: 'op-no' }
-  ]
+  { id: 128, key: '', query: {} }
+]
+
+exports.DEVICES = [
+  { id: 0, key: 'operator' },
+  { id: 1, key: 'EL' },
+  { id: 2, key: 'EU' }
+]
+
+exports.MODES = [
+  { id: 0, key: 'mode-no' },
+  { id: 1, key: 'mode-data-edit' },
+  { id: 2, key: 'mode-data-read' },
+  { id: 3, key: 'mode-eme-1' },
+  { id: 4, key: 'mode-eme-2' },
+  { id: 5, key: 'mode-no' },
+  { id: 6, key: 'mode-step' },
+  { id: 7, key: 'mode-preset' },
+  { id: 8, key: 'mode-auto' }
+]
+
+exports.OPERATIONS = [
+  { id: 0, key: 'op-no' },
+  { id: 1, key: 'op-alarm-on' },
+  { id: 2, key: 'op-alarm-off' },
+  { id: 3, key: 'op-switch-mode' },
+  { id: 4, key: 'op-change-pin' },
+  { id: 5, key: 'op-stall-in' },
+  { id: 6, key: 'op-stall-out' },
+  { id: 7, key: 'op-shuffle-in' },
+  { id: 8, key: 'op-shuffle-out' },
+  { id: 9, key: 'op-stall-rsv' },
+  { id: 10, key: 'op-req-exit' },
+  { id: 11, key: 'op-req-entry' },
+  { id: 12, key: 'op-no' },
+  { id: 13, key: 'op-no' },
+  { id: 14, key: 'op-no' },
+  { id: 15, key: 'op-no' }
+]

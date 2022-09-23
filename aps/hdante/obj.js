@@ -6,7 +6,6 @@ const { generateCards } = require('../../models/Card')
 const { generateQueue } = require('../../models/Queue')
 const { generateStalls } = require('../../models/Stall')
 
-
 const al01 = new Alarms(generateAlarms(1, 64, str.ALARMS.slice(0, 64)), 1) // EL
 const al02 = new Alarms(generateAlarms(1, 64, str.ALARMS.slice(0, 64)), 2) // EU
 exports.alarms = [al01, al02]
@@ -150,7 +149,7 @@ exports.map = {
       elevators: [
         { id: 'el', label: 'EL' }
       ]
-    },
+    }
   ],
   occupancy: [
     { id: 'busy', value: 0 },

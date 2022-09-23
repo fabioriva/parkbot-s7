@@ -111,7 +111,7 @@ exports.REQ_1 = {
  * PLC SH
  */
 
- exports.PLC_SH = {
+exports.PLC_SH = {
   ip: '140.80.20.13',
   rack: 0,
   slot: 2,

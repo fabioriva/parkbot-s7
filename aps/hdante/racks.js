@@ -16,7 +16,7 @@ const rack1 = {
     new S7_521_1BL00_0AB0(1, eb.slice(0, 4)),
     new S7_521_1BL00_0AB0(2, eb.slice(4, 8)),
     new S7_522_1BL01_0AB0(3, ab.slice(0, 4)),
-    new S7_521_1BH00_0AB0(4, [eb[8], ab[4]]), // 8 DI  + 8 DI
+    new S7_521_1BH00_0AB0(4, [eb[8], ab[4]]) // 8 DI  + 8 DI
   ]
 }
 
