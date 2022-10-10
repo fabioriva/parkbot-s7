@@ -5,7 +5,7 @@ const { generateBits, generateBytes } = require('../../models/bits')
 const { generateCards } = require('../../models/cards')
 const { generateQueue } = require('../../models/queue')
 const { generateStalls } = require('../../models/stalls')
-// const { Exit, ExitScreen, GarageScreen, Occupancy } = require('../../models/screens')
+const { Exit, ExitScreen, GarageScreen, Occupancy } = require('../../models/screens')
 
 const al01 = new Alarms(generateAlarms(1, 64, str.ALARMS.slice(0, 64)), 1) // EU1
 const al02 = new Alarms(generateAlarms(1, 64, str.ALARMS.slice(0, 64)), 2) // EU2
@@ -152,3 +152,23 @@ exports.map = {
     { id: 'lock', value: 0 }
   ]
 }
+
+const exit1 = new Exit(1, 'EXIT 1')
+const exit2 = new Exit(2, 'EXIT 2')
+const exits = [exit1, exit2]
+exports.exits = exits
+
+const exitScreen = new ExitScreen(1, 'EXIT SCREEN')
+exports.exitScreen = exitScreen
+
+const screen1 = new GarageScreen(1, 'GARAGE 1')
+const screen2 = new GarageScreen(2, 'GARAGE 2')
+const screens = [screen1, screen2]
+exports.screens = screens
+
+exports.dss = { screens, exitScreen }
+
+const occupancy1 = new Occupancy(1, 'ALL')
+const occupancy2 = new Occupancy(2, 'SUV')
+const occupancy3 = new Occupancy(3, 'SEDAN')
+exports.occupancy = [occupancy1, occupancy2, occupancy3]
