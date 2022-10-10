@@ -1,6 +1,6 @@
 const { inputs, outputs } = require('./obj')
-const { Device } = require('../../models/Device')
-const { Position } = require('../../models/Position')
+const { Device } = require('../../models/devices')
+const { Position } = require('../../models/positions')
 
 const device = new Device(3, 'EL')
 

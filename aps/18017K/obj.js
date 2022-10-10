@@ -1,10 +1,11 @@
 const def = require('./def')
 const str = require('./str')
-const { Alarms, generateAlarms } = require('../../models/Alarm')
-const { generateBits, generateBytes } = require('../../models/Bit')
-const { generateCards } = require('../../models/Card')
-const { generateQueue } = require('../../models/Queue')
-const { generateStalls } = require('../../models/Stall')
+const { Alarms, generateAlarms } = require('../../models/alarms')
+const { generateBits, generateBytes } = require('../../models/bits')
+const { generateCards } = require('../../models/cards')
+const { generateQueue } = require('../../models/queue')
+const { generateStalls } = require('../../models/stalls')
+// const { Exit, ExitScreen, GarageScreen, Occupancy } = require('../../models/screens')
 
 const al01 = new Alarms(generateAlarms(1, 64, str.ALARMS.slice(0, 64)), 1) // EU1
 const al02 = new Alarms(generateAlarms(1, 64, str.ALARMS.slice(0, 64)), 2) // EU2
@@ -48,6 +49,8 @@ exports.positions = device1.positions.concat(
   device2.positions,
   device3.positions
 )
+
+exports.diagnostic = [device1, device2, device3]
 
 exports.modes = str.MODES
 

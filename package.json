@@ -25,7 +25,7 @@
     "test": "standard",
     "build": "node-gyp -j 16 build",
     "build:dev": "node-gyp -j 16 build --debug",
-    "dev": "nodemon aps/hdante"
+    "dev": "nodemon aps/18017K"
   },
   "standard": {
     "ignore": [

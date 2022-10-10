@@ -1,6 +1,6 @@
 const def = require('./def')
 const { alarms, inputs, merkers, outputs } = require('./obj')
-const { Device } = require('../../models/Device')
+const { Device } = require('../../models/devices')
 
 const device = new Device(1, 'EU1')
 
