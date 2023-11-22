@@ -3,8 +3,9 @@ const snap7 = require('bindings')('node_snap7_client')
 
 async function forever (client) {
   try {
-    const buffer = await client.ReadArea(0x84, 505, 0, 142, 0x02)
-    logger.info(buffer)
+    await client.ReadArea(0x84, 505, 0, 142, 0x02)
+    // const buffer = await client.ReadArea(0x84, 505, 0, 142, 0x02)
+    // logger.info(buffer)
   } catch (e) {
     logger.error(e)
   }

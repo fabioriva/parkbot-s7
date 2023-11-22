@@ -1,7 +1,9 @@
 #ifndef SNAP7_CLIENT_H
 #define SNAP7_CLIENT_H
 
+#define NAPI_EXPERIMENTAL
 #include <napi.h>
+
 #include "snap7.h"
 #include "async_worker.h"
 
